@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>صفحة الترحيب والمجلدات</title>
+  <style>
+    body {
+      background-color: #f3f6f9;
+      font-family: 'Tahoma', sans-serif;
+      color: #333;
+      direction: rtl;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .folders {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+
+    .folder {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      width: 150px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .folder:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .folder-icon {
+      font-size: 40px;
+      color: #f39c12;
+    }
+
+    .folder-label {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #444;
+    }
+  </style>
+  <link href="../LOGO.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <!-- ✅ لوجو -->
+  <img src="LOGO-01-01.png" alt="LOGO" width="300" class="LOGO">
+
+  <!-- ✅ عبارة ترحيبية -->
+  <h1>مرحباً بكم</h1>  <h1>A collection of our previous works</h1>
+
+
+  <!-- ✅ الفولدرات -->
+  <div class="folders">
+    <a href="docs/Company documents.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">Company documents</div>
+    </a>
+    <a href="docs/Our customers.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">Our customers</div>
+    </a>
+    <a href="docs/Shields of thanks.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">Shields of thanks </div>
+    </a>
+    <a href="docs/work team.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">work team</div>
+    </a>
+    <a href="docs/EVENT.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">EVENT</div>
+    </a>
+    <a href="docs/EXHIBITION.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">EXHIBITION</div>
+    </a>
+    <a href="docs/Open Day.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">Open Day</div>
+    </a>
+    <a href="docs/FLAGS.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">FLAGS</div>
+    </a>
+	      <a href="docs/Mall Stand.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">Mall Stand</div>
+    </a>
+    <a href="docs/Signing Agreements.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">Signing Agreements</div>
+    </a>
+    <a href="docs/SIGNAGES.pdf" target="_blank" class="folder">
+      <div class="folder-icon">📁</div>
+      <div class="folder-label">SIGNAGES</div>
+    </a>
+<script>
+    // إرسال شعار (إشعار) عند دخول الزائر
+    fetch("https://webhook.site/8a061820-eaac-4f19-a8eb-ff2d83075479", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        message: "📢 زائر جديد دخل الموقع",
+        time: new Date().toISOString(),
+        browser: navigator.userAgent
+      })
+    });
+  </script>
+
+  </div>
+
+</body>
+</html>
