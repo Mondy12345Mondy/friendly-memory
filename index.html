@@ -64,7 +64,19 @@
 <body>
 
   <!-- ✅ لوجو -->
-  <img src="LOGO-01-01.png" alt="LOGO" width="300" class="LOGO">
+  <img src="LOGO-01-01.png" alt="LOGO" width="300" class="LOGO">@keyframes rotate3d {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.logo {
+  animation: rotate3d 5s infinite linear;
+  transform-style: preserve-3d;
+}
 
   <!-- ✅ عبارة ترحيبية -->
   <h1>مرحباً بكم</h1>  <h1>A collection of our previous works</h1>
